@@ -1,43 +1,15 @@
+
 /* 
-Chiedere all'utente una parole
-creare una funziona per capire se la parola e' palindroma
+
+L'utente clicca un bottone che genera una griglia di gioco.
+Ogni cella ha un numero progressivo, da 1 a 100.
+Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
+
 */
 
-const wordUser = prompt('Inserisci una parola');
-console.log('wordUser', wordUser, typeof wordUser);
+const buttonStart = document.getElementById ('start');
+console.log(buttonStart);
 
-const worldResult = wordPalindrome(wordUser);
+const container = document.querySelector ('.container');
+console.log(container);
 
-if (worldResult == true) {
-    alert(' è Palindroma')
-}
-
-else {
-    alert(' non è Palindroma')
-}
-
-// FUNZIONE
-
-function wordPalindrome(word) {
-
-let wordReverse = '';
-
-for (let i = word.length - 1; i >= 0; i--) {
-
-    wordReverse += word[i];
-}
-
-console.log ('wordReverse', wordReverse, typeof wordReverse);
-
-if (word == wordReverse) {
-
-    return true;
-}
-
-else {
-
-    return false;
-
-}
-
-}
