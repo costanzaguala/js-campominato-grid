@@ -13,3 +13,28 @@ console.log(buttonStart);
 const container = document.querySelector ('.container');
 console.log(container);
 
+buttonStart.addEventListener ("click", function (){
+
+    let grid = document.createElement('div');
+    grid.classList.add('grid-numbers');
+    container.append(grid);
+    console.log(grid);
+
+    for ( i = 1; i <= 100 ; i++ ) {
+
+        const cell = document.createElement ('div');
+        cell.classList.add('cell-style');
+        cell.innerHTML= i;
+        grid.append(cell);
+        console.log(cell);
+
+        buttonStart.classList.add('button-start-display');
+
+        cell.addEventListener ("click", function (){
+            cell.classList.toggle('cell-color');
+        })
+
+        console.log(cell[i]);
+    }
+
+})

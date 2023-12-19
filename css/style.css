@@ -8,7 +8,7 @@
 
 h1 {
     text-align: center;
-    margin: 20px 0px 50px  ;
+    padding: 30px 0 ;
 }
 
 .container {
@@ -19,4 +19,29 @@ h1 {
 
 #start {
     padding: 20px;
+}
+
+.grid-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #7FFFD4;
+    padding: 60px;
+}
+
+.cell-style {
+    width: calc((100% / 10) - 10px);
+    height: calc((100% / 10) - 10px);
+    line-height: 2em;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 18px; 
+}
+
+.button-start-display {
+    display: none;
+}
+
+.cell-color {
+    background-color: pink;
 }
